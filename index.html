@@ -50,27 +50,42 @@
 
         <section id="presentation" class="panel">
             <div class="container grid">
-                <div class="card reveal">
-                    <h2 data-i18n="presentation.h1">Who we are</h2>
-                    <p data-i18n="presentation.p1">Short presentation of your organization. Replace this paragraph with a description of mission, history, and what you do. Keep it concise and friendly.</p>
-                    <ul>
-                        <li data-i18n="presentation.li1">Competitive teams</li>
-                        <li data-i18n="presentation.li2">Casual meetups</li>
-                        <li data-i18n="presentation.li3">Tournaments & workshops</li>
-                    </ul>
-                </div>
-                <div class="card reveal">
-                    <h2 data-i18n="presentation.h2">Join & Participate</h2>
-                    <p data-i18n="presentation.p2">Explain how people can join, signup links, tryouts, or meetings. Add links to more resources here.</p>
-                    <p class="muted" data-i18n="presentation.tip">Tip: put forms or Discord/Telegram invites here.</p>
-                </div>
+                    <div class="card reveal">
+                        <h2 data-i18n="presentation.h1">Who we are</h2>
+                        <div class="timeline">
+                            <!-- Example timeline item: replace/add as needed -->
+                            <div class="timeline-item">
+                                <div class="timeline-date">2022</div>
+                                <div class="timeline-content">
+                                    <img src="images/giocatori.jpg" alt="Team photo" style="max-width:100%;height:auto;border-radius:8px;" />
+                                    <h3>Founded</h3>
+                                    <p>Unitn Esports was founded by students passionate about gaming and community events.</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023</div>
+                                <div class="timeline-content">
+                                    <h3>First Tournament</h3>
+                                    <p>We hosted our first local tournament. <a href="https://example.com/tournament-2023" target="_blank">See results</a></p>
+                                    <img src="images/tournament.jpg" alt="Tournament" style="max-width:100%;height:auto;border-radius:8px;" />
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024</div>
+                                <div class="timeline-content">
+                                    <h3>Community Growth</h3>
+                                    <p>Our Discord reached 500 members! <a href="https://discord.gg/3sKa5A8DcJ" target="_blank">Join us</a></p>
+                                </div>
+                            </div>
+                            <!-- Add more timeline items as needed -->
+                        </div>
+                    </div>
             </div>
         </section>
 
         <section id="calendar" class="panel calendar-panel">
             <div class="container">
                 <h2 data-i18n="calendar.h1">Calendar</h2>
-                <p class="muted" data-i18n="calendar.desc">Public calendar of events.</p>
 
                 <div class="calendar-actions">
                     <a id="gcalSubscribe" class="btn" href="#" target="_blank" data-i18n="calendar.openGcal">Open in Google Calendar</a>
@@ -78,13 +93,10 @@
                 </div>
 
                 <div class="calendar-embed">
-                    <!-- Replace 'your_calendar_id' with your calendar's id (often like abcdefgh@group.calendar.google.com) -->
                     <div class="iframe-wrap">
                         <iframe id="gcalIframe" src="https://calendar.google.com/calendar/embed?src=7ce2a231d31471b8c4677024ce69c937623dd5ea67bf1c7568966d2d0da8f255@group.calendar.google.com&ctz=Europe%2FRome" style="border:0" frameborder="0" scrolling="no"></iframe>
                     </div>
                 </div>
-
-                <p class="muted small" data-i18n="calendar.howto">How to get your calendar ID: make your Google Calendar public, then use the 'Integrate calendar' → 'Public address in iCal format' or calendar ID. Replace both the embed `src` and the subscribe/download links below.</p>
             </div>
         </section>
 
@@ -92,7 +104,7 @@
             <div class="container grid-contact">
                 <div class="card contact-card reveal">
                     <h2 data-i18n="contact.h1">Contact Us</h2>
-                    <p data-i18n="contact.desc">Questions, partnerships, or volunteering? Fill the form or email us directly.</p>
+                    <p data-i18n="contact.desc">Questions or volunteering? Fill the form or email us directly.</p>
                     <form id="contactForm" action="mailto:unitn_e-sports@outlook.it" method="post" enctype="text/plain">
                         <label for="name" data-i18n="contact.label.name">Name</label>
                         <input id="name" name="name" placeholder="Your name" data-i18n-placeholder="contact.ph.name" required />
@@ -125,6 +137,9 @@
                             <img src="images/svg/github_white.svg" alt="" width="20" height="20" class="social-icon" />
                         </a>
                     </div>
+                    <p class="muted" style="margin-top:1rem;">
+                        <a data-i18n="contact.dataNotice" href="https://docs.google.com/document/d/1HXsFeqlYsUOa8hifcpSuMp3FEjUcxF3bbBuX8SjGpkc/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Data processing notice" data-i18n="contact.dataNotice">Data processing notice</a>
+                    </p>
                 </aside>
             </div>
         </section>

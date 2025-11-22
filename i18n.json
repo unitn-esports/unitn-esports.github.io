@@ -18,24 +18,38 @@
     },
     "presentation": {
       "h1": "Who we are",
-      "p1": "Short presentation of your organization. Replace this paragraph with a description of mission, history, and what you do. Keep it concise and friendly.",
-      "li1": "Competitive teams",
-      "li2": "Casual meetups",
-      "li3": "Tournaments & workshops",
-      "h2": "Join & Participate",
-      "p2": "Explain how people can join, signup links, tryouts, or meetings. Add links to more resources here.",
-      "tip": "Tip: put forms or Discord/Telegram invites here."
+      "timeline": [
+        {
+          "date": "2022",
+          "title": "Founded",
+          "desc": "Unitn Esports was founded by students passionate about gaming and community events.",
+          "imgAlt": "Team photo"
+        },
+        {
+          "date": "2023",
+          "title": "First Tournament",
+          "desc": "We hosted our first local tournament.",
+          "linkText": "See results",
+          "linkUrl": "https://example.com/tournament-2023",
+          "imgAlt": "Tournament"
+        },
+        {
+          "date": "2024",
+          "title": "Community Growth",
+          "desc": "Our Discord reached 500 members!",
+          "linkText": "Join us",
+          "linkUrl": "https://discord.gg/3sKa5A8DcJ"
+        }
+      ]
     },
     "calendar": {
       "h1": "Calendar",
-      "desc": "Public calendar of events. Replace the calendar ID below to embed your Google Calendar and enable subscribe/download options.",
       "openGcal": "Open in Google Calendar",
-      "downloadIcs": "Download .ics",
-      "howto": "How to get your calendar ID: make your Google Calendar public, then use the 'Integrate calendar' → 'Public address in iCal format' or calendar ID. Replace both the embed src and the subscribe/download links below."
+      "downloadIcs": "Download .ics"
     },
     "contact": {
       "h1": "Contact Us",
-      "desc": "Questions, partnerships, or volunteering? Fill the form or email us directly.",
+      "desc": "Questions or partnerships? Fill the form or email us directly.",
       "label": {
         "name": "Name",
         "email": "Email",
@@ -54,7 +68,7 @@
       "emailLabel": "Email:",
       "discordLabel": "Discord:",
       "socialLabel": "Social:",
-      "addLinks": "Add links to Twitch, GitHub, or other pages here."
+      "dataNotice": "Data processing notice"
     },
     "footer": {
       "copy": "© 2025 Unitn Esports — All rights reserved",
@@ -80,24 +94,38 @@
     },
     "presentation": {
       "h1": "Chi siamo",
-      "p1": "Breve presentazione dell'associazione. Sostituisci questo paragrafo con la mission, la storia e cosa facciamo.",
-      "li1": "Squadre competitive",
-      "li2": "Incontri informali",
-      "li3": "Tornei e workshop",
-      "h2": "Iscriviti e Partecipa",
-      "p2": "Spiega come iscriversi, link per le prove, o gli incontri. Aggiungi link a risorse.",
-      "tip": "Suggerimento: inserisci form o inviti a Discord/Telegram qui."
+      "timeline": [
+        {
+          "date": "2022",
+          "title": "Fondazione",
+          "desc": "Unitn Esports nasce grazie a studenti appassionati di gaming e community.",
+          "imgAlt": "Foto del team"
+        },
+        {
+          "date": "2023",
+          "title": "Primo torneo",
+          "desc": "Abbiamo organizzato il nostro primo torneo locale.",
+          "linkText": "Vedi risultati",
+          "linkUrl": "https://example.com/tournament-2023",
+          "imgAlt": "Torneo"
+        },
+        {
+          "date": "2024",
+          "title": "Crescita della community",
+          "desc": "Il nostro Discord ha raggiunto 500 membri!",
+          "linkText": "Unisciti a noi",
+          "linkUrl": "https://discord.gg/3sKa5A8DcJ"
+        }
+      ]
     },
     "calendar": {
       "h1": "Calendario",
-      "desc": "Calendario pubblico degli eventi. Sostituisci l’ID del calendario per incorporare il tuo Google Calendar e abilitare iscrizione/download.",
       "openGcal": "Apri in Google Calendar",
-      "downloadIcs": "Scarica .ics",
-      "howto": "Per ottenere l'ID del calendario: rendi pubblico il calendario in Google Calendar e copia l'ID dal pannello Integrate calendar (es. abcd1234@group.calendar.google.com)."
+      "downloadIcs": "Scarica .ics"
     },
     "contact": {
       "h1": "Contattaci",
-      "desc": "Domande, partnership, o volontariato? Compila il form o scrivici via email.",
+      "desc": "Domande o partnership? Compila il form o scrivici via email.",
       "label": {
         "name": "Nome",
         "email": "Email",
@@ -116,7 +144,7 @@
       "emailLabel": "Email:",
       "discordLabel": "Discord:",
       "socialLabel": "Social:",
-      "addLinks": "Aggiungi link a Twitch, GitHub o altre pagine qui."
+      "dataNotice": "Informativa sul trattamento dei dati"
     },
     "footer": {
       "copy": "© 2025 Unitn Esports — Tutti i diritti riservati",
