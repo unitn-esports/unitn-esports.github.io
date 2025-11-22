@@ -16,7 +16,7 @@
 <body>
     <header class="site-header">
         <div class="container header-inner">
-            <a class="brand" href="#home" data-i18n="brand"><img src="images/logo_no_bg.png" alt="unitn esports logo" width="100" height="100"></a>
+            <a class="brand" href="#home" data-i18n="brand"><img src="images/logo_no_bg.png" alt="unitn esports logo" width="80" height="80"></a>
             <nav id="mainNav" class="main-nav">
                 <a href="#presentation" data-i18n="nav.about">About</a>
                 <a href="#calendar" data-i18n="nav.calendar">Calendar</a>
@@ -42,47 +42,36 @@
                 <h1 class="hero-title" data-i18n="hero.title">Welcome to Unitn Esports</h1>
                 <p class="hero-sub" data-i18n="hero.sub">Student-run competitive gaming and community events. Join us!</p>
                 <div class="hero-actions">
-                    <a class="btn" href="#calendar" data-i18n="hero.seeEvents">See Events</a>
-                    <a class="btn outline" href="#contact" data-i18n="hero.getInvolved">Get Involved</a>
+                    <a class="btn" href="#calendar" data-i18n="hero.seeEvents">See events</a>
+                    <a class="btn outline" href="#contact" data-i18n="hero.getInvolved">Get involved</a>
                 </div>
             </div>
         </section>
 
         <section id="presentation" class="panel">
+            <div class="card centered-card">
+                <h2 data-i18n="presentation.h1">Who we are</h2>
+                <p data-i18n="presentation.p1" class="card-text">
+                    Unitn E-Sports is a student sports association founded in 2022 with the aim of creating a community of students who can share their passion for competitive video games.<br><br>
+                    The association aims to create student teams that participate in national and international tournaments and competitions, representing the University of Trento in the field of Esports.<br><br>
+                    Unitn E-Sports organizes both online and offline events and competitions, involving students from different faculties and academic years, and aims to develop an external network of relationships with other universities. In addition, the association also organizes training events for students interested in entering the world of Esports.
+                </p>
+            </div>
+            <h2 class="record-heading" data-i18n="record.h1">Record of events and competitions</h2>
             <div class="container grid">
-                    <div class="card reveal">
-                        <h2 data-i18n="presentation.h1">Who we are</h2>
-                        <div class="timeline">
-                            <!-- Example timeline item: replace/add as needed -->
-                            <div class="timeline-item">
-                                <div class="timeline-date">2022</div>
-                                <div class="timeline-content">
-                                    <img src="images/giocatori.jpg" alt="Team photo" style="max-width:100%;height:auto;border-radius:8px;" />
-                                    <h3>Founded</h3>
-                                    <p>Unitn Esports was founded by students passionate about gaming and community events.</p>
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">2023</div>
-                                <div class="timeline-content">
-                                    <h3>First Tournament</h3>
-                                    <p>We hosted our first local tournament. <a href="https://example.com/tournament-2023" target="_blank">See results</a></p>
-                                    <img src="images/tournament.jpg" alt="Tournament" style="max-width:100%;height:auto;border-radius:8px;" />
-                                </div>
-                            </div>
-                            <div class="timeline-item">
-                                <div class="timeline-date">2024</div>
-                                <div class="timeline-content">
-                                    <h3>Community Growth</h3>
-                                    <p>Our Discord reached 500 members! <a href="https://discord.gg/3sKa5A8DcJ" target="_blank">Join us</a></p>
-                                </div>
-                            </div>
-                            <!-- Add more timeline items as needed -->
-                        </div>
-                    </div>
+                <article class="card record-grid-cell">
+                    <img src="images/events/gsports_league.jpg" alt="GSport League">
+                    <h3 class="record-title">GSport League</h3>
+                    <time class="record-date">2023</time>
+                </article>
+
+                <article class="card record-grid-cell">
+                    <img src="images/events/amazon_university_esports.png" alt="Amazon University ESports">
+                    <h3 class="record-title">Amazon University E-Sports</h3>
+                    <time class="record-date">2023</time>
+                </article>
             </div>
         </section>
-
         <section id="calendar" class="panel calendar-panel">
             <div class="container">
                 <h2 data-i18n="calendar.h1">Calendar</h2>
@@ -109,7 +98,7 @@
                         <label for="name" data-i18n="contact.label.name">Name</label>
                         <input id="name" name="name" placeholder="Your name" data-i18n-placeholder="contact.ph.name" required />
                         <label for="email" data-i18n="contact.label.email">Email</label>
-                        <input id="email" name="email" type="email" placeholder="you@example.com" data-i18n-placeholder="contact.ph.email" required />
+                        <input id="email" name="email" type="email" placeholder="email@example.com" data-i18n-placeholder="contact.ph.email" required />
                         <label for="message" data-i18n="contact.label.message">Message</label>
                         <textarea id="message" name="message" rows="5" placeholder="Write a short message" data-i18n-placeholder="contact.ph.message"></textarea>
                         <div class="form-actions">

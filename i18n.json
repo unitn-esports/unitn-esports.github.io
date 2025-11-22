@@ -13,34 +13,15 @@
     "hero": {
       "title": "Welcome to Unitn Esports",
       "sub": "Student-run competitive gaming and community events. Join us!",
-      "seeEvents": "See Events",
-      "getInvolved": "Get Involved"
+      "seeEvents": "See events",
+      "getInvolved": "Get involved"
     },
     "presentation": {
       "h1": "Who we are",
-      "timeline": [
-        {
-          "date": "2022",
-          "title": "Founded",
-          "desc": "Unitn Esports was founded by students passionate about gaming and community events.",
-          "imgAlt": "Team photo"
-        },
-        {
-          "date": "2023",
-          "title": "First Tournament",
-          "desc": "We hosted our first local tournament.",
-          "linkText": "See results",
-          "linkUrl": "https://example.com/tournament-2023",
-          "imgAlt": "Tournament"
-        },
-        {
-          "date": "2024",
-          "title": "Community Growth",
-          "desc": "Our Discord reached 500 members!",
-          "linkText": "Join us",
-          "linkUrl": "https://discord.gg/3sKa5A8DcJ"
-        }
-      ]
+      "p1": "Unitn E-Sports is a student sports association founded in 2022 with the aim of creating a community of students who can share their passion for competitive video games.\n\nThe association aims to create student teams that participate in national and international tournaments and competitions, representing the University of Trento in the field of Esports.\n\nUnitn E-Sports organizes both online and offline events and competitions, involving students from different faculties and academic years, and aims to develop an external network of relationships with other universities. In addition, the association also organizes training events for students interested in entering the world of Esports."
+    },
+    "record": {
+      "h1": "Record of events and competitions"
     },
     "calendar": {
       "h1": "Calendar",
@@ -57,7 +38,7 @@
       },
       "ph": {
         "name": "Your name",
-        "email": "you@example.com",
+        "email": "email@example.com",
         "message": "Write a short message"
       },
       "btn": {
@@ -94,29 +75,10 @@
     },
     "presentation": {
       "h1": "Chi siamo",
-      "timeline": [
-        {
-          "date": "2022",
-          "title": "Fondazione",
-          "desc": "Unitn Esports nasce grazie a studenti appassionati di gaming e community.",
-          "imgAlt": "Foto del team"
-        },
-        {
-          "date": "2023",
-          "title": "Primo torneo",
-          "desc": "Abbiamo organizzato il nostro primo torneo locale.",
-          "linkText": "Vedi risultati",
-          "linkUrl": "https://example.com/tournament-2023",
-          "imgAlt": "Torneo"
-        },
-        {
-          "date": "2024",
-          "title": "Crescita della community",
-          "desc": "Il nostro Discord ha raggiunto 500 membri!",
-          "linkText": "Unisciti a noi",
-          "linkUrl": "https://discord.gg/3sKa5A8DcJ"
-        }
-      ]
+      "p1": "Unitn E-Sports è un'associazione sportiva studentesca nata nel 2022 con l'intento di creare una comunità di studenti che possano condividere la loro passione per i videogiochi competitivi.\n\nL'associazione si pone l'obiettivo di creare dei team studenteschi che partecipino a tornei e competizioni nazionali e internazionali, per rappresentare l'Università di Trento nell'ambito degli Esports.\n\nUnitn E-Sports organizza eventi e competizioni sia online che offline, coinvolgendo studenti di diverse facoltà e anni accademici, e punta a sviluppare un network esterno di relazioni con le altre università. Inoltre, l'associazione organizza anche eventi di formazione per gli studenti interessati a entrare nel mondo degli Esports."
+    },
+    "record": {
+      "h1": "Albo degli eventi e competizioni"
     },
     "calendar": {
       "h1": "Calendario",
@@ -133,7 +95,7 @@
       },
       "ph": {
         "name": "Il tuo nome",
-        "email": "tuo@esempio.it",
+        "email": "email@esempio.it",
         "message": "Scrivi un breve messaggio"
       },
       "btn": {
