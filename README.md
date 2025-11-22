@@ -1,4 +1,4 @@
-# unitn-esports.github.io
+# UniTn Esports
 Github pages repository per il sito dell'associazione
 
 ## Updating the Calendar and Deployment

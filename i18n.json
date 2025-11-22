@@ -1,20 +1,126 @@
 {
   "en": {
-    "brand": "Unitn Esports",
-    "nav": { "about": "About", "calendar": "Calendar", "contact": "Contact", "social": "Social" },
-    "hero": { "title": "Welcome to Unitn Esports", "sub": "Student-run competitive gaming and community events. Join us!", "seeEvents": "See Events", "getInvolved": "Get Involved" },
-    "presentation": { "h1": "Who we are", "p1": "Short presentation of your organization. Replace this paragraph with a description of mission, history, and what you do. Keep it concise and friendly.", "li1": "Competitive teams", "li2": "Casual meetups", "li3": "Tournaments & workshops", "h2": "Join & Participate", "p2": "Explain how people can join, signup links, tryouts, or meetings. Add links to more resources here.", "tip": "Tip: put forms or Discord/Telegram invites here." },
-    "calendar": { "h1": "Calendar", "desc": "Public calendar of events. Replace the calendar ID below to embed your Google Calendar and enable subscribe/download options.", "openGcal": "Open in Google Calendar", "downloadIcs": "Download .ics", "howto": "How to get your calendar ID: make your Google Calendar public, then use the 'Integrate calendar' → 'Public address in iCal format' or calendar ID. Replace both the embed src and the subscribe/download links below." },
-    "contact": { "h1": "Contact Us", "desc": "Questions, partnerships, or volunteering? Fill the form or email us directly.", "label": { "name": "Name", "email": "Email", "message": "Message" }, "ph": { "name": "Your name", "email": "you@example.com", "message": "Write a short message" }, "btn": { "send": "Send", "reset": "Reset" }, "otherWays": "Other ways to reach us", "emailLabel": "Email:", "discordLabel": "Discord:", "socialLabel": "Social:", "addLinks": "Add links to Twitch, GitHub, or other pages here." },
-    "footer": { "copy": "© 2025 Unitn Esports — All rights reserved", "note_en": "Made with ❤️ by Pietro Marini" }
+    "brand": {
+      "text": "Unitn Esports",
+      "alt": "Unitn Esports logo"
+    },
+    "nav": {
+      "about": "About",
+      "calendar": "Calendar",
+      "contact": "Contact",
+      "social": "Social"
+    },
+    "hero": {
+      "title": "Welcome to Unitn Esports",
+      "sub": "Student-run competitive gaming and community events. Join us!",
+      "seeEvents": "See Events",
+      "getInvolved": "Get Involved"
+    },
+    "presentation": {
+      "h1": "Who we are",
+      "p1": "Short presentation of your organization. Replace this paragraph with a description of mission, history, and what you do. Keep it concise and friendly.",
+      "li1": "Competitive teams",
+      "li2": "Casual meetups",
+      "li3": "Tournaments & workshops",
+      "h2": "Join & Participate",
+      "p2": "Explain how people can join, signup links, tryouts, or meetings. Add links to more resources here.",
+      "tip": "Tip: put forms or Discord/Telegram invites here."
+    },
+    "calendar": {
+      "h1": "Calendar",
+      "desc": "Public calendar of events. Replace the calendar ID below to embed your Google Calendar and enable subscribe/download options.",
+      "openGcal": "Open in Google Calendar",
+      "downloadIcs": "Download .ics",
+      "howto": "How to get your calendar ID: make your Google Calendar public, then use the 'Integrate calendar' → 'Public address in iCal format' or calendar ID. Replace both the embed src and the subscribe/download links below."
+    },
+    "contact": {
+      "h1": "Contact Us",
+      "desc": "Questions, partnerships, or volunteering? Fill the form or email us directly.",
+      "label": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message"
+      },
+      "ph": {
+        "name": "Your name",
+        "email": "you@example.com",
+        "message": "Write a short message"
+      },
+      "btn": {
+        "send": "Send",
+        "reset": "Reset"
+      },
+      "otherWays": "Other ways to reach us",
+      "emailLabel": "Email:",
+      "discordLabel": "Discord:",
+      "socialLabel": "Social:",
+      "addLinks": "Add links to Twitch, GitHub, or other pages here."
+    },
+    "footer": {
+      "copy": "© 2025 Unitn Esports — All rights reserved",
+      "note_en": "Made with ❤️ by Pietro Marini"
+    }
   },
   "it": {
-    "brand": "Unitn Esports",
-    "nav": { "about": "Chi siamo", "calendar": "Calendario", "contact": "Contatti", "social": "Social" },
-    "hero": { "title": "Benvenuti in Unitn Esports", "sub": "Associazione studentesca per esports e eventi. Unisciti a noi!", "seeEvents": "Eventi", "getInvolved": "Partecipa" },
-    "presentation": { "h1": "Chi siamo", "p1": "Breve presentazione dell'associazione. Sostituisci questo paragrafo con la mission, la storia e cosa facciamo.", "li1": "Squadre competitive", "li2": "Incontri informali", "li3": "Tornei e workshop", "h2": "Iscriviti e Partecipa", "p2": "Spiega come iscriversi, link per le prove, o gli incontri. Aggiungi link a risorse.", "tip": "Suggerimento: inserisci form o inviti a Discord/Telegram qui." },
-    "calendar": { "h1": "Calendario", "desc": "Calendario pubblico degli eventi. Sostituisci l’ID del calendario per incorporare il tuo Google Calendar e abilitare iscrizione/download.", "openGcal": "Apri in Google Calendar", "downloadIcs": "Scarica .ics", "howto": "Per ottenere l'ID del calendario: rendi pubblico il calendario in Google Calendar e copia l'ID dal pannello Integrate calendar (es. abcd1234@group.calendar.google.com)." },
-    "contact": { "h1": "Contattaci", "desc": "Domande, partnership, o volontariato? Compila il form o scrivici via email.", "label": { "name": "Nome", "email": "Email", "message": "Messaggio" }, "ph": { "name": "Il tuo nome", "email": "tuo@esempio.it", "message": "Scrivi un breve messaggio" }, "btn": { "send": "Invia", "reset": "Reset" }, "otherWays": "Altri modi per contattarci", "emailLabel": "Email:", "discordLabel": "Discord:", "socialLabel": "Social:", "addLinks": "Aggiungi link a Twitch, GitHub o altre pagine qui." },
-    "footer": { "copy": "© 2025 Unitn Esports — Tutti i diritti riservati", "note_it": "Fatto con ❤️ da Pietro Marini" }
+    "brand": {
+      "text": "Unitn Esports",
+      "alt": "Logo di Unitn Esports"
+    },
+    "nav": {
+      "about": "Chi siamo",
+      "calendar": "Calendario",
+      "contact": "Contatti",
+      "social": "Social"
+    },
+    "hero": {
+      "title": "Benvenuti in Unitn Esports",
+      "sub": "Associazione studentesca per esports e eventi. Unisciti a noi!",
+      "seeEvents": "Eventi",
+      "getInvolved": "Partecipa"
+    },
+    "presentation": {
+      "h1": "Chi siamo",
+      "p1": "Breve presentazione dell'associazione. Sostituisci questo paragrafo con la mission, la storia e cosa facciamo.",
+      "li1": "Squadre competitive",
+      "li2": "Incontri informali",
+      "li3": "Tornei e workshop",
+      "h2": "Iscriviti e Partecipa",
+      "p2": "Spiega come iscriversi, link per le prove, o gli incontri. Aggiungi link a risorse.",
+      "tip": "Suggerimento: inserisci form o inviti a Discord/Telegram qui."
+    },
+    "calendar": {
+      "h1": "Calendario",
+      "desc": "Calendario pubblico degli eventi. Sostituisci l’ID del calendario per incorporare il tuo Google Calendar e abilitare iscrizione/download.",
+      "openGcal": "Apri in Google Calendar",
+      "downloadIcs": "Scarica .ics",
+      "howto": "Per ottenere l'ID del calendario: rendi pubblico il calendario in Google Calendar e copia l'ID dal pannello Integrate calendar (es. abcd1234@group.calendar.google.com)."
+    },
+    "contact": {
+      "h1": "Contattaci",
+      "desc": "Domande, partnership, o volontariato? Compila il form o scrivici via email.",
+      "label": {
+        "name": "Nome",
+        "email": "Email",
+        "message": "Messaggio"
+      },
+      "ph": {
+        "name": "Il tuo nome",
+        "email": "tuo@esempio.it",
+        "message": "Scrivi un breve messaggio"
+      },
+      "btn": {
+        "send": "Invia",
+        "reset": "Reset"
+      },
+      "otherWays": "Altri modi per contattarci",
+      "emailLabel": "Email:",
+      "discordLabel": "Discord:",
+      "socialLabel": "Social:",
+      "addLinks": "Aggiungi link a Twitch, GitHub o altre pagine qui."
+    },
+    "footer": {
+      "copy": "© 2025 Unitn Esports — Tutti i diritti riservati",
+      "note_it": "Fatto con ❤️ da Pietro Marini"
+    }
   }
 }

@@ -96,8 +96,19 @@ function applyTranslations(lang){
   // elements with data-i18n
   document.querySelectorAll('[data-i18n]').forEach(el=>{
     const key = el.getAttribute('data-i18n');
-    const val = getTranslation(lang, key);
-    if(val) el.innerHTML = val;
+    // Prefer a structured translation: try `key.text`, fall back to `key`.
+    const textVal = getTranslation(lang, `${key}.text`) || getTranslation(lang, key);
+    if(!textVal) return;
+    // If the element contains an <img>, avoid replacing innerHTML (which would remove the image).
+    // Instead, set the image's alt using `key.alt` (or fallback to the text), and set an aria-label.
+    const img = el.querySelector('img');
+    if(img){
+      const altVal = getTranslation(lang, `${key}.alt`) || textVal;
+      try{ img.alt = altVal; }catch(e){}
+      el.setAttribute('aria-label', textVal);
+    } else {
+      el.innerHTML = textVal;
+    }
   });
   // placeholders
   document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>{
