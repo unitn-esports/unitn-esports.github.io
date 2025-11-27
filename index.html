@@ -61,6 +61,24 @@
                     </p>
                 </div>
             </div>
+        </section>
+        <section id="calendar" class="panel calendar-panel">
+            <div class="container">
+                <h2 data-i18n="calendar.h1">Calendar</h2>
+
+                <div class="calendar-actions">
+                    <a id="gcalSubscribe" class="btn" href="#" target="_blank" data-i18n="calendar.openGcal">Open in Google Calendar</a>
+                    <a id="icsDownload" class="btn outline" href="#" data-i18n="calendar.downloadIcs">Export (download .ics file)</a>
+                </div>
+
+                <div class="calendar-embed">
+                    <div class="iframe-wrap">
+                        <iframe id="gcalIframe" src="https://calendar.google.com/calendar/embed?src=7ce2a231d31471b8c4677024ce69c937623dd5ea67bf1c7568966d2d0da8f255@group.calendar.google.com&ctz=Europe%2FRome" style="border:0" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="panel">
             <h2 class="record-heading" data-i18n="record.h1">Record of events and competitions</h2>
             <div class="container grid">
                 <article class="card record-grid-cell">
@@ -88,23 +106,6 @@
                 </article>
             </div>
         </section>
-        <section id="calendar" class="panel calendar-panel">
-            <div class="container">
-                <h2 data-i18n="calendar.h1">Calendar</h2>
-
-                <div class="calendar-actions">
-                    <a id="gcalSubscribe" class="btn" href="#" target="_blank" data-i18n="calendar.openGcal">Open in Google Calendar</a>
-                    <a id="icsDownload" class="btn outline" href="#" data-i18n="calendar.downloadIcs">Export (download .ics file)</a>
-                </div>
-
-                <div class="calendar-embed">
-                    <div class="iframe-wrap">
-                        <iframe id="gcalIframe" src="https://calendar.google.com/calendar/embed?src=7ce2a231d31471b8c4677024ce69c937623dd5ea67bf1c7568966d2d0da8f255@group.calendar.google.com&ctz=Europe%2FRome" style="border:0" frameborder="0" scrolling="no"></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <section id="contact" class="panel">
             <div class="container grid-contact">
                 <div class="card contact-card reveal">
