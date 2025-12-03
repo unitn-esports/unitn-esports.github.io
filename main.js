@@ -142,4 +142,65 @@ document.addEventListener('DOMContentLoaded', async ()=>{
       applyTranslations(l);
     });
   });
+
+  // --- Event modal logic ---
+  const eventCards = document.querySelectorAll('.event-card');
+  const eventModal = document.getElementById('eventModal');
+  const modalEventImg = document.getElementById('modalEventImg');
+  const modalEventTitle = document.getElementById('modalEventTitle');
+  const modalEventDateLabel = document.getElementById('modalEventDateLabel');
+  const modalEventDate = document.getElementById('modalEventDate');
+  const modalEventParticipantsLabel = document.getElementById('modalEventParticipantsLabel');
+  const modalEventParticipants = document.getElementById('modalEventParticipants');
+  const modalEventDescriptionLabel = document.getElementById('modalEventDescriptionLabel');
+  const modalEventDescription = document.getElementById('modalEventDescription');
+
+  function showEventModal(card) {
+    if (!eventModal) return;
+    modalEventImg.src = card.getAttribute('data-img') || '';
+    modalEventImg.alt = card.getAttribute('data-title') || '';
+    modalEventTitle.textContent = card.getAttribute('data-title') || '';
+    // Format date
+    const dateStr = card.getAttribute('data-date');
+    let formattedDate = dateStr;
+    if (dateStr && dateStr.match(/^\d{4}-\d{2}-\d{2}$/)) {
+      const d = new Date(dateStr);
+      formattedDate = d.toLocaleDateString(lang, { year: 'numeric', month: 'long', day: 'numeric' });
+    }
+    // Set translated labels
+    if (modalEventDateLabel) modalEventDateLabel.textContent = getTranslation(lang, 'modal.date');
+    if (modalEventParticipantsLabel) modalEventParticipantsLabel.textContent = getTranslation(lang, 'modal.participants');
+    if (modalEventDescriptionLabel) modalEventDescriptionLabel.textContent = getTranslation(lang, 'modal.description');
+    modalEventDate.textContent = formattedDate || '';
+    modalEventParticipants.textContent = card.getAttribute('data-participants') || '';
+    modalEventDescription.textContent = card.getAttribute('data-description') || '';
+    eventModal.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+
+  function hideEventModal() {
+    if (!eventModal) return;
+    eventModal.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+
+  eventCards.forEach(card => {
+    card.addEventListener('click', () => showEventModal(card));
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        showEventModal(card);
+      }
+    });
+  });
+  // Close modal on outside click
+  if (eventModal) {
+    eventModal.addEventListener('click', (e) => {
+      if (e.target === eventModal) hideEventModal();
+    });
+  }
+  // Close modal on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (eventModal && eventModal.style.display === 'flex' && e.key === 'Escape') hideEventModal();
+  });
 });

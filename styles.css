@@ -295,6 +295,56 @@ html, body {
   margin: 0 0.25rem
 }
 
+/* Event modal styles */
+.event-modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  justify-content: center;
+  align-items: center;
+}
+.event-modal[style*="display: flex"] {
+  display: flex !important;
+}
+.event-modal-content {
+  background: var(--card);
+  color: #e6eef8;
+  border-radius: 1rem;
+  max-width: 420px;
+  width: 90vw;
+  padding: 2.5rem 2rem;
+  position: relative;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+  animation: modalIn .3s cubic-bezier(.2,.9,.3,1);
+}
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(24px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+.event-modal-content button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.event-modal-content img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+.event-modal-content h3 {
+  margin-top: 0;
+}
+
 /* responsive */
 @media (max-width:900px) {
   .grid {

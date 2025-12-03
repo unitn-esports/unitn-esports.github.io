@@ -59,8 +59,13 @@
       "note": "Made with ❤️ by Pietro Marini",
       "assetsNotice": "All assets used to describe or display events remain the property of their respective owners.<br>UniTn E-sports makes no claim of ownership over such materials.<br>Before adding images, all relevant owners are contacted to obtain permission for use.",
       "permissionProof": "Proof of permissions are available <a href=\"https://docs.google.com/document/d/1XYgYzRvguzgS3483zZ9lNgWZayf2R9ExQ8pxLzdRecQ/edit?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Permission proof document\">here</a>."
-    }
-  },
+     },
+     "modal": {
+       "date": "Date:",
+       "participants": "Participants:",
+       "description": "Description:"
+     }
+    },
   "it": {
     "brand": {
       "text": "UniTn E-sports",
@@ -121,6 +126,11 @@
       "note": "Fatto con ❤️ da Pietro Marini",
       "assetsNotice": "Tutti gli asset utilizzati per descrivere o mostrare eventi rimangono di proprietà dei rispettivi titolari.<br>UniTn E-sports non rivendica alcun diritto di proprietà su tali materiali.<br>Prima di aggiungere immagini, vengono contattati i relativi proprietari per ottenere il permesso d'uso.",
       "permissionProof": "La prova dei permessi è disponibile <a href=\"https://docs.google.com/document/d/1XYgYzRvguzgS3483zZ9lNgWZayf2R9ExQ8pxLzdRecQ/edit?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Permission proof document\">qui</a>."
+     },
+     "modal": {
+       "date": "Data:",
+       "participants": "Partecipanti:",
+       "description": "Descrizione:"
+     }
     }
   }
-}
