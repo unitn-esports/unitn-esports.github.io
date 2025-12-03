@@ -56,7 +56,7 @@
     },
     "footer": {
       "copy": "© 2025 UniTn E-sports — All rights reserved",
-      "note_en": "Made with ❤️ by Pietro Marini",
+      "note": "Made with ❤️ by Pietro Marini",
       "assetsNotice": "All assets used to describe or display events remain the property of their respective owners.<br>UniTn E-sports makes no claim of ownership over such materials.<br>Before adding images, all relevant owners are contacted to obtain permission for use."
     }
   },
@@ -117,7 +117,7 @@
     },
     "footer": {
       "copy": "© 2025 UniTn E-sports — Tutti i diritti riservati",
-      "note_it": "Fatto con ❤️ da Pietro Marini",
+      "note": "Fatto con ❤️ da Pietro Marini",
       "assetsNotice": "Tutti gli asset utilizzati per descrivere o mostrare eventi rimangono di proprietà dei rispettivi titolari.<br>UniTn E-sports non rivendica alcun diritto di proprietà su tali materiali.<br>Prima di aggiungere immagini, vengono contattati i relativi proprietari per ottenere il permesso d'uso."
     }
   }
