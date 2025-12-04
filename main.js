@@ -152,19 +152,31 @@ function setupEventModal(langRef) {
   function showEventModal(card) {
     if (!eventModal) return;
     modalEventImg.src = card.getAttribute('data-img') || '';
-    modalEventImg.alt = card.getAttribute('data-title') || '';
-    modalEventTitle.textContent = card.getAttribute('data-title') || '';
-    // Format date
-    const dateStr = card.getAttribute('data-date');
-    let formattedDate = dateStr;
-    if (dateStr && /^\d{4}-\d{2}-\d{2}$/.test(dateStr)) {
-      const d = new Date(dateStr);
-      formattedDate = d.toLocaleDateString(langRef.current, { year: 'numeric', month: 'long', day: 'numeric' });
+    // Title translation support
+    const titleKey = card.getAttribute('data-title');
+    modalEventImg.alt = getTranslation(langRef.current, titleKey) || titleKey || '';
+    modalEventTitle.textContent = getTranslation(langRef.current, titleKey) || titleKey || '';
+
+    // Description translation support
+    const descKey = card.getAttribute('data-description');
+    const descVal = getTranslation(langRef.current, descKey) || descKey || '';
+    modalEventDescription.textContent = descVal;
+
+    // Date translation support
+    const dateKey = card.getAttribute('data-date');
+    let dateVal = getTranslation(langRef.current, dateKey) || dateKey || '';
+    // If the value is a date string, format it
+    if (/^\d{4}-\d{2}-\d{2}$/.test(dateVal)) {
+      const d = new Date(dateVal);
+      dateVal = d.toLocaleDateString(langRef.current, { year: 'numeric', month: 'long', day: 'numeric' });
     }
+    modalEventDate.textContent = dateVal;
+
+    // Participants translation support
+    const partKey = card.getAttribute('data-participants');
+    modalEventParticipants.textContent = getTranslation(langRef.current, partKey) || partKey || '';
+
     updateModalLabels(langRef.current);
-    modalEventDate.textContent = formattedDate || '';
-    modalEventParticipants.textContent = card.getAttribute('data-participants') || '';
-    modalEventDescription.textContent = card.getAttribute('data-description') || '';
     eventModal.style.display = 'flex';
     document.body.style.overflow = 'hidden';
   }
