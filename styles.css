@@ -44,8 +44,8 @@
   --bg: #0f1724;
   --card: #0f1a2b;
   --muted: #9aa4b2;
-  --accent: #7c4dff;
-  --accent-2: #00c2ff;
+  --accent: #fff;
+  --accent-2: #c0c0c0;
   --glass: rgba(255, 255, 255, 0.03);
   --max-width: 1100px;
   color-scheme: dark;
