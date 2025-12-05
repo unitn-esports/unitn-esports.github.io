@@ -236,14 +236,44 @@ document.addEventListener('DOMContentLoaded', async () => {
   const langRef = { current: lang };
   applyTranslations(lang);
 
+  // Dyslexic font switch logic
+  const dysSwitch = qs('#dyslexicFontSwitch');
+  const dysLabel = qs('#dyslexicFontLabel');
+  const dysKey = 'dyslexic-font-enabled';
+  function setDyslexicFont(enabled) {
+    if (enabled) {
+      document.documentElement.classList.add('dyslexic-font');
+    } else {
+      document.documentElement.classList.remove('dyslexic-font');
+    }
+    if (dysSwitch) dysSwitch.checked = !!enabled;
+    localStorage.setItem(dysKey, enabled ? '1' : '0');
+  }
+  function updateDyslexicLabel(lang) {
+    if (dysLabel) dysLabel.textContent = getTranslation(lang, 'dyslexicFontLabel') || 'Dyslexic font';
+  }
+  if (dysSwitch) {
+    dysSwitch.addEventListener('change', () => {
+      setDyslexicFont(dysSwitch.checked);
+    });
+  }
+  // On language change, update label
+  function onLangChange(lang) {
+    applyTranslations(lang);
+    updateDyslexicLabel(lang);
+  }
   // Language switch buttons
   qsa('.lang-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const l = btn.getAttribute('data-lang');
       langRef.current = l;
-      applyTranslations(l);
+      onLangChange(l);
     });
   });
+  // Initial dyslexic font state
+  const dysEnabled = localStorage.getItem(dysKey) === '1';
+  setDyslexicFont(dysEnabled);
+  updateDyslexicLabel(lang);
 
   setupEventModal(langRef);
 });

@@ -1,11 +1,14 @@
 <!doctype html>
 <html lang="en">
 <head>
+        <!-- Meta tags for SEO -->
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
         <meta name="description" content="UniTn E-sports is the official University of Trento student association for competitive gaming, tournaments, and esports events. Join our vibrant community!" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://unitnesports.it/" />
+
+        <!-- Title and stylesheet link -->
         <title>UniTn E-sports</title>
         <link rel="stylesheet" href="styles.css" />
 
@@ -34,6 +37,7 @@
             "description": "UniTn E-sports is the official University of Trento student association for competitive gaming, tournaments, and esports events. Join our vibrant community!"
         }
         </script>
+
     <!-- Favicon and icons for all platforms -->
     <link rel="icon" type="image/x-icon" href="images/ico_files/favicon.ico" />
     <link rel="icon" type="image/png" sizes="32x32" href="images/ico_files/favicon-32x32.png" />
@@ -42,9 +46,19 @@
     <link rel="manifest" href="images/ico_files/site.webmanifest" />
 </head>
 <body>
+    <!-- 
+    Site header, always present on screen.
+    Contains the brand logo, navigation links, language switch, dyslexia-friendly font switch, and hamburger menu for small screens.
+    -->
     <header class="site-header">
         <div class="container header-inner">
+
+            <!--
+            Organization logo image.
+            Also function as a "home" link to scroll to the top of the page.
+            -->
             <a class="brand" href="#home" data-i18n="brand"><img src="images/logo_no_bg.png" alt="unitn esports logo" width="80" height="80"></a>
+            
             <nav id="mainNav" class="main-nav">
                 <a href="#presentation" data-i18n="nav.about">About</a>
                 <a href="#calendar" data-i18n="nav.calendar">Calendar</a>
@@ -52,10 +66,25 @@
                 <a href="#social" class="social-link" data-i18n="nav.social">Social</a>
             </nav>
             <div class="header-controls">
+
+                <!-- Language switch -->
                 <div class="lang-switch" aria-hidden="false">
                     <button class="lang-btn" data-lang="en">EN</button>
                     <button class="lang-btn" data-lang="it">IT</button>
                 </div>
+
+                <!-- Dyslexia-friendly font switch -->
+                <div class="dyslexic-switch" style="display:inline-block; margin-left:0.7rem;">
+                    <label style="display:flex; align-items:center; gap:0.4rem; cursor:pointer;">
+                        <input type="checkbox" id="dyslexicFontSwitch" style="accent-color:#7c4dff; width:1.1em; height:1.1em; margin:0;" />
+                        <span id="dyslexicFontLabel" style="font-size:1rem;">Dyslexic font</span>
+                    </label>
+                </div>
+
+                <!-- OpenDyslexic font-face (Regular only since no italic or bold is present in the site) -->
+                <link rel="preload" href="opendyslexic-0.91.12/OpenDyslexic-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
+                <!-- Hamburger menu button for small screens -->
                 <button id="navToggle" class="nav-toggle" aria-label="Toggle navigation">☰</button>
             </div>
         </div>
@@ -78,14 +107,12 @@
 
         <section id="presentation" class="panel">
             <h2 class="main-heading" data-i18n="presentation.h1">Who we are</h2>
-            <div style="display:flex; justify-content:center;">
-                <div class="card centered-card">
-                    <p data-i18n="presentation.p1" class="card-text">
-                        UniTn E-sports is a student sports association founded in 2022 with the aim of creating a community of students who can share their passion for competitive video games.<br>
-                        The association aims to create student teams that participate in national and international tournaments and competitions, representing the University of Trento in the field of E-sports.<br>
-                        UniTn E-sports organizes both online and offline events and competitions, involving students from different faculties and academic years, and aims to develop an external network of relationships with other universities. In addition, the association also organizes training events for students interested in entering the world of E-sports.
-                    </p>
-                </div>
+            <div class="card centered-card" style="width:fit-content; min-width:0; margin-left:auto; margin-right:auto; padding:1.2rem 1rem;">
+                <p data-i18n="presentation.p1" class="card-text">
+                    UniTn E-sports is a student sports association founded in 2022 with the aim of creating a community of students who can share their passion for competitive video games.<br>
+                    The association aims to create student teams that participate in national and international tournaments and competitions, representing the University of Trento in the field of E-sports.<br>
+                    UniTn E-sports organizes both online and offline events and competitions, involving students from different faculties and academic years, and aims to develop an external network of relationships with other universities. In addition, the association also organizes training events for students interested in entering the world of E-sports.
+                </p>
             </div>
         </section>
         <section id="calendar" class="panel calendar-panel">
@@ -109,28 +136,44 @@
             <div class="container">
                 <h3 data-i18n="record.competitions-title">Competitions we participated in</h3>
                 <div class="grid">
+                    <!-- 
+                    Article card for the GSport League event.
+                    Everything before the other comment is data attributes for the modal population, visible only after clicking on the card.
+                     -->
                     <article class="card record-grid-cell event-card" tabindex="0"
                         data-title="record.gsport-league.h3"
                         data-date="record.gsport-league.date"
                         data-participants="record.gsport-league.participants"
                         data-description="record.gsport-league.description"
                         data-img="images/events/gsports_league.png">
+                                                
+                        <!-- Data and tags for the grid card -->
                         <img src="images/events/gsports_league.png" alt="GSport League">
                         <h3 class="record-title">GSport League</h3>
                         <time class="record-date">2023</time>
                     </article>
 
+                    <!-- 
+                    Article card for the Amazon University E-sports event.
+                    Everything before the other comment is data attributes for the modal population, visible only after clicking on the card.
+                     -->
                     <article class="card record-grid-cell event-card" tabindex="0"
                         data-title="record.amazon-university-esports.h3"
                         data-date="record.amazon-university-esports.date"
                         data-participants="record.amazon-university-esports.participants"
                         data-description="record.amazon-university-esports.description"
                         data-img="images/events/amazon_university_esports.png">
+                                                
+                        <!-- Data and tags for the grid card -->
                         <img src="images/events/amazon_university_esports.png" alt="Amazon University E-sports">
                         <h3 class="record-title">Amazon University E-sports</h3>
                         <time class="record-date">2023</time>
                     </article>
 
+                    <!-- 
+                    Article card for the Synergie Rocket League Cup.
+                    Everything before the other comment is data attributes for the modal population, visible only after clicking on the card.
+                     -->
                     <article class="card record-grid-cell event-card" tabindex="0"
                         data-title="record.synergie-rocket-league-cup.h3"
                         data-date="record.synergie-rocket-league-cup.date"
@@ -139,39 +182,49 @@
                         data-img="images/events/synergie-cup-logo.svg"
                         data-custom-label1="record.synergie-rocket-league-cup.label1"
                         data-custom-text1="record.synergie-rocket-league-cup.text1"
-                        data-custom-icons1='<a href="https://www.facebook.com/PGEsportsIT" target="_blank" rel="noopener noreferrer"><img src="images/svg/facebook_white.svg" alt="Facebook" width="20" height="20"/></a>
-                        <a href="https://www.instagram.com/pgesportsit/" target="_blank" rel="noopener noreferrer"><img src="images/svg/instagram_white.svg" alt="Instagram" width="20" height="20"/></a>
-                        <a href="https://x.com/PGEsportsIT" target="_blank" rel="noopener noreferrer"><img src="images/svg/x_white.svg" alt="X" width="20" height="20" /></a>
-                        <a href="https://www.youtube.com/c/PGEsportsIT/featured" target="_blank" rel="noopener noreferrer"><img src="images/svg/youtube_white.svg" alt="YouTube" width="20" height="20" /></a>
-                        <a href="https://www.twitch.tv/pg_esports" target="_blank" rel="noopener noreferrer"><img src="images/svg/twitch_white.svg" alt="Twitch" width="20" height="20"/></a>'
+                        data-custom-icons1='<a href="https://www.facebook.com/PGEsportsIT" aria-label="Facebook" class="social" target="_blank" rel="noopener noreferrer"><img src="images/svg/facebook_white.svg" alt="Facebook" width="20" height="20" class="social-icons"/></a>
+                        <a href="https://www.instagram.com/pgesportsit/" aria-label="Instagram" class="social" target="_blank" rel="noopener noreferrer"><img src="images/svg/instagram_white.svg" alt="Instagram" width="20" height="20" class="social-icons"/></a>
+                        <a href="https://x.com/PGEsportsIT" aria-label="X" class="social" target="_blank" rel="noopener noreferrer"><img src="images/svg/x_white.svg" alt="X" width="20" height="20" class="social-icons"/></a>
+                        <a href="https://www.youtube.com/c/PGEsportsIT/featured" aria-label="YouTube" class="social" target="_blank" rel="noopener noreferrer"><img src="images/svg/youtube_white.svg" alt="YouTube" width="20" height="20" class="social-icons"/></a>
+                        <a href="https://www.twitch.tv/pg_esports" aria-label="Twitch" class="social" target="_blank" rel="noopener noreferrer"><img src="images/svg/twitch_white.svg" alt="Twitch" width="20" height="20" class="social-icons"/></a>'
                         data-custom-label2="record.synergie-rocket-league-cup.label2"
                         data-custom-text2="record.synergie-rocket-league-cup.text2"
-                        data-custom-icons2='<a href="https://www.facebook.com/SynergieItalia" target="_blank" rel="noopener noreferrer"><img src="images/svg/facebook_white.svg" alt="Facebook" width="20" height="20"/></a>
-                        <a href="https://www.linkedin.com/company/synergie-italia/" target="_blank" rel="noopener noreferrer"><img src="images/svg/linkedin_white.svg" alt="LinkedIn" width="20" height="20"/></a>
-                        <a href="https://x.com/SynergieItalia" target="_blank" rel="noopener noreferrer"><img src="images/svg/x_white.svg" alt="X" width="20" height="20" /></a>
-                        <a href="https://www.instagram.com/synergieitalia/" target="_blank" rel="noopener noreferrer"><img src="images/svg/instagram_white.svg" alt="Instagram" width="20" height="20"/></a>
-                        <a href="https://www.youtube.com/@SynergieItaliaSpA" target="_blank" rel="noopener noreferrer"><img src="images/svg/youtube_white.svg" alt="YouTube" width="20" height="20"/></a>'>
+                        data-custom-icons2='<a href="https://www.facebook.com/SynergieItalia" aria-label="Facebook" class="social" target="_blank" rel="noopener noreferrer"><img src="images/svg/facebook_white.svg" alt="Facebook" width="20" height="20" class="social-icons"/></a>
+                        <a href="https://www.linkedin.com/company/synergie-italia/" aria-label="LinkedIn" class="social" target="_blank" rel="noopener noreferrer"><img src="images/svg/linkedin_white.svg" alt="LinkedIn" width="20" height="20" class="social-icons"/></a>
+                        <a href="https://x.com/SynergieItalia" aria-label="X" class="social" target="_blank" rel="noopener noreferrer"><img src="images/svg/x_white.svg" alt="X" width="20" height="20" class="social-icons" /></a>
+                        <a href="https://www.instagram.com/synergieitalia/" aria-label="Instagram" class="social" target="_blank" rel="noopener noreferrer"><img src="images/svg/instagram_white.svg" alt="Instagram" width="20" height="20" class="social-icons"/></a>
+                        <a href="https://www.youtube.com/@SynergieItaliaSpA" aria-label="YouTube" class="social" target="_blank" rel="noopener noreferrer"><img src="images/svg/youtube_white.svg" alt="YouTube" width="20" height="20" class="social-icons"/></a>'>
+                        
+                        <!-- Data and tags for the grid card -->
                         <img src="images/events/synergie-cup-logo.svg" alt="Synergie Rocket League Cup">
                         <h3 class="record-title">Synergie Rocket League Cup</h3>
                         <time class="record-date">2025</time>
+
                     </article>
-                </div>
-            </div>
+                </div> <!-- End of grid div -->
+            </div> <!-- End of container div (competitions we partecipated in and grid)-->
             <div class="container">
                 <h3 data-i18n="record.organized-title">Events we organized</h3>
                 <div class="grid">
+                    <!-- 
+                    Article card for the In-house Yu-Gi-Oh! tournament.
+                    Everything before the other comment is data attributes for the modal population, visible only after clicking on the card.
+                     -->                  
                     <article class="card record-grid-cell event-card" tabindex="0"
                         data-title="record.ygo-tournament.h3"
                         data-date="record.ygo-tournament.date"
                         data-participants="record.ygo-tournament.participants"
                         data-description="record.ygo-tournament.description"
                         data-img="images/events/ygo_tournament.png">
+
+                        <!-- Data and tags for the grid card -->
                         <img src="images/events/ygo_tournament.png" alt="In-house Yu-Gi-Oh! tournament">
                         <h3 class="record-title" data-i18n="record.ygo-tournament.h3">In-house Yu-Gi-Oh! tournament</h3>
                         <time class="record-date">2025</time>
                     </article>
-                </div>
-            </div>
+                </div><!-- End of grid div -->
+            </div> <!-- End of container div (Events we organized and grid)-->
+
             <!-- Event details modal -->
             <div id="eventModal" class="event-modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); justify-content:center; align-items:center;">
                 <div class="event-modal-content dynamic-modal">
@@ -206,6 +259,11 @@
                 </div>
             </div>
         </section>
+
+        <!--
+        Contact section.
+        Contains a contact form and other ways to reach us card with data processing notice.
+        -->
         <section id="contact" class="panel">
             <div class="container grid-contact">
                 <div class="card contact-card reveal">
@@ -225,22 +283,23 @@
                     </form>
                 </div>
 
+                <!-- Other ways to reach us card (with data processing notice) -->
                 <aside class="card contact-info reveal" style="align-self:start; height:auto; padding:1rem; box-sizing:border-box; max-width: 360px;">
                     <h3 data-i18n="contact.otherWays">Other ways to reach us</h3>
                     <p><strong data-i18n="contact.emailLabel">Email:</strong> <a href="mailto:unitn_e-sports@outlook.it">unitn_e-sports@outlook.it</a></p>
                     <p><strong data-i18n="contact.socialLabel">Socials:</strong></p>
                     <div id="social" class="social-icons">
                         <a href="https://www.instagram.com/unitn_esports/" aria-label="Instagram" class="social" target="_blank" rel="noopener noreferrer">
-                            <img src="images/svg/instagram_white.svg" alt="Instagram" width="20" height="20"/>
+                            <img src="images/svg/instagram_white.svg" alt="Instagram" width="20" height="20" class="social-icons"/>
                         </a>
                         <a href="https://discord.gg/3sKa5A8DcJ" aria-label="Discord" class="social" target="_blank" rel="noopener noreferrer">
-                            <img src="images/svg/discord_white.svg" alt="" width="20" height="20"/>
+                            <img src="images/svg/discord_white.svg" alt="Discord" width="20" height="20" class="social-icons"/>
                         </a>
                         <a href="https://t.me/+ka6nwbQpS2w3MjVk" aria-label="Telegram" class="social" target="_blank" rel="noopener noreferrer">
-                            <img src="images/svg/telegram_white.svg" alt="" width="20" height="20"/>
+                            <img src="images/svg/telegram_white.svg" alt="Telegram" width="20" height="20" class="social-icons"/>
                         </a>
                         <a href="https://github.com/unitn-esports" aria-label="Github" class="social" target="_blank" rel="noopener noreferrer">
-                            <img src="images/svg/github_white.svg" alt="" width="20" height="20"/>
+                            <img src="images/svg/github_white.svg" alt="Github" width="20" height="20" class="social-icons"/>
                         </a>
                     </div>
                     <p class="muted" style="margin-top:1rem;">
@@ -251,15 +310,24 @@
         </section>
     </main>
 
+    <!--
+    Site footer.
+    Contains copyright notice, navigation links, credits, asset usage disclaimer and dyslexia-friendly font credits. 
+    -->
     <footer class="site-footer">
         <div class="container footer-inner">
             <small data-i18n="footer.copy">&copy; 2025 UniTn E-sports — All rights reserved</small>
+            
+            <!-- Footer nav bar for easier navigation -->
             <nav class="footer-nav">
                 <a href="#presentation">About</a>
                 <a href="#calendar">Calendar</a>
                 <a href="#contact">Contact</a>
             </nav>
+
         </div>
+
+        <!-- Footer note and asset usage disclaimer -->
         <div class="container footer-note-wrap">
             <p class="footer-note" data-i18n="footer.note">Made with ❤️ by Pietro Marini</p>
             <p class="footer-assets-note" data-i18n="footer.assetsNotice">
@@ -270,6 +338,8 @@
             <p data-i18n="footer.permissionProof">Proof of permissions are available <a href="https://docs.google.com/document/d/1XYgYzRvguzgS3483zZ9lNgWZayf2R9ExQ8pxLzdRecQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Permission proof document">here</a>.</p>
         </div>
     </footer>
+
+    <!-- JavaScript file declaration -->
     <script type="module" src="main.js"></script>
 </body>
 </html>
