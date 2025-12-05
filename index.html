@@ -136,7 +136,21 @@
                         data-date="record.synergie-rocket-league-cup.date"
                         data-participants="record.synergie-rocket-league-cup.participants"
                         data-description="record.synergie-rocket-league-cup.description"
-                        data-img="images/events/synergie-cup-logo.svg">
+                        data-img="images/events/synergie-cup-logo.svg"
+                        data-custom-label1="record.synergie-rocket-league-cup.label1"
+                        data-custom-text1="record.synergie-rocket-league-cup.text1"
+                        data-custom-icons1='<a href="https://www.facebook.com/PGEsportsIT" target="_blank" rel="noopener noreferrer"><img src="images/svg/facebook_white.svg" alt="Facebook" width="20" height="20"/></a>
+                        <a href="https://www.instagram.com/pgesportsit/" target="_blank" rel="noopener noreferrer"><img src="images/svg/instagram_white.svg" alt="Instagram" width="20" height="20"/></a>
+                        <a href="https://x.com/PGEsportsIT" target="_blank" rel="noopener noreferrer"><img src="images/svg/x_white.svg" alt="X" width="20" height="20" /></a>
+                        <a href="https://www.youtube.com/c/PGEsportsIT/featured" target="_blank" rel="noopener noreferrer"><img src="images/svg/youtube_white.svg" alt="YouTube" width="20" height="20" /></a>
+                        <a href="https://www.twitch.tv/pg_esports" target="_blank" rel="noopener noreferrer"><img src="images/svg/twitch_white.svg" alt="Twitch" width="20" height="20"/></a>'
+                        data-custom-label2="record.synergie-rocket-league-cup.label2"
+                        data-custom-text2="record.synergie-rocket-league-cup.text2"
+                        data-custom-icons2='<a href="https://www.facebook.com/SynergieItalia" target="_blank" rel="noopener noreferrer"><img src="images/svg/facebook_white.svg" alt="Facebook" width="20" height="20"/></a>
+                        <a href="https://www.linkedin.com/company/synergie-italia/" target="_blank" rel="noopener noreferrer"><img src="images/svg/linkedin_white.svg" alt="LinkedIn" width="20" height="20"/></a>
+                        <a href="https://x.com/SynergieItalia" target="_blank" rel="noopener noreferrer"><img src="images/svg/x_white.svg" alt="X" width="20" height="20" /></a>
+                        <a href="https://www.instagram.com/synergieitalia/" target="_blank" rel="noopener noreferrer"><img src="images/svg/instagram_white.svg" alt="Instagram" width="20" height="20"/></a>
+                        <a href="https://www.youtube.com/@SynergieItaliaSpA" target="_blank" rel="noopener noreferrer"><img src="images/svg/youtube_white.svg" alt="YouTube" width="20" height="20"/></a>'>
                         <img src="images/events/synergie-cup-logo.svg" alt="Synergie Rocket League Cup">
                         <h3 class="record-title">Synergie Rocket League Cup</h3>
                         <time class="record-date">2025</time>
@@ -160,15 +174,35 @@
             </div>
             <!-- Event details modal -->
             <div id="eventModal" class="event-modal" style="display:none; position:fixed; z-index:1000; left:0; top:0; width:100vw; height:100vh; background:rgba(0,0,0,0.7); justify-content:center; align-items:center;">
-                <div class="event-modal-content" style="background:var(--card); color:#e6eef8; border-radius:1rem; max-width:420px; width:90vw; padding:2.5rem 2rem; position:relative; box-shadow:0 8px 32px rgba(0,0,0,0.4);">
-                    <img id="modalEventImg" src="" alt="" style="width:100%; border-radius:8px; margin-bottom:1rem;" />
-                    <h3 id="modalEventTitle" style="margin-top:0;"></h3>
-                    <p id="modalEventDescriptionLabel" data-i18n="modal.description" style="font-weight:600; margin-bottom:.2rem;"></p>
-                    <p id="modalEventDescription" data-i18n-modal="description" style="margin-bottom:.5rem;"></p>
-                    <p id="modalEventDateLabel" data-i18n="modal.date" style="font-weight:600; margin-bottom:.2rem;"></p>
-                    <p id="modalEventDate" data-i18n-modal="date" style="margin-bottom:.5rem;"></p>
-                    <p id="modalEventParticipantsLabel" data-i18n="modal.participants" style="font-weight:600; margin-bottom:.2rem;"></p>
-                    <p id="modalEventParticipants" data-i18n-modal="participants"></p>
+                <div class="event-modal-content dynamic-modal">
+                    <div class="modal-header">
+                        <img id="modalEventImg" src="" alt="" class="modal-img" />
+                        <h3 id="modalEventTitle" class="modal-title"></h3>
+                    </div>
+                    <div class="modal-details" id="modalDetailsGrid">
+                        <div class="modal-detail">
+                            <p id="modalEventDescriptionLabel" data-i18n="modal.description" class="modal-label"></p>
+                            <p id="modalEventDescription" data-i18n-modal="description" class="modal-value"></p>
+                        </div>
+                        <div class="modal-detail">
+                            <p id="modalEventDateLabel" data-i18n="modal.date" class="modal-label"></p>
+                            <p id="modalEventDate" data-i18n-modal="date" class="modal-value"></p>
+                        </div>
+                        <div class="modal-detail">
+                            <p id="modalEventParticipantsLabel" data-i18n="modal.participants" class="modal-label"></p>
+                            <p id="modalEventParticipants" data-i18n-modal="participants" class="modal-value"></p>
+                        </div>
+                        <div class="modal-detail">
+                            <p id="modalCustomLabel1" class="modal-label"></p>
+                            <p id="modalCustomText1" class="modal-value"></p>
+                            <div id="modalCustomIcons1" class="social-icons"></div>
+                        </div>
+                        <div class="modal-detail">
+                            <p id="modalCustomLabel2" class="modal-label"></p>
+                            <p id="modalCustomText2" class="modal-value"></p>
+                            <div id="modalCustomIcons2" class="social-icons"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -197,16 +231,16 @@
                     <p><strong data-i18n="contact.socialLabel">Socials:</strong></p>
                     <div id="social" class="social-icons">
                         <a href="https://www.instagram.com/unitn_esports/" aria-label="Instagram" class="social" target="_blank" rel="noopener noreferrer">
-                            <img src="images/svg/instagram_white.svg" alt="Instagram" width="20" height="20" class="social-icon" />
+                            <img src="images/svg/instagram_white.svg" alt="Instagram" width="20" height="20"/>
                         </a>
                         <a href="https://discord.gg/3sKa5A8DcJ" aria-label="Discord" class="social" target="_blank" rel="noopener noreferrer">
-                            <img src="images/svg/discord_white.svg" alt="" width="20" height="20" class="social-icon" />
+                            <img src="images/svg/discord_white.svg" alt="" width="20" height="20"/>
                         </a>
                         <a href="https://t.me/+ka6nwbQpS2w3MjVk" aria-label="Telegram" class="social" target="_blank" rel="noopener noreferrer">
-                            <img src="images/svg/telegram_white.svg" alt="" width="20" height="20" class="social-icon" />
+                            <img src="images/svg/telegram_white.svg" alt="" width="20" height="20"/>
                         </a>
                         <a href="https://github.com/unitn-esports" aria-label="Github" class="social" target="_blank" rel="noopener noreferrer">
-                            <img src="images/svg/github_white.svg" alt="" width="20" height="20" class="social-icon" />
+                            <img src="images/svg/github_white.svg" alt="" width="20" height="20"/>
                         </a>
                     </div>
                     <p class="muted" style="margin-top:1rem;">

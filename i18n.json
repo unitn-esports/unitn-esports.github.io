@@ -18,7 +18,7 @@
     },
     "presentation": {
       "h1": "Who we are",
-      "p1": "UniTn E-sports is a student sports association founded in 2022 with the aim of creating a community of students who can share their passion for competitive video games.\nThe association aims to create student teams that participate in national and international tournaments and competitions, representing the University of Trento in the field of E-sports.\nUniTn E-sports organizes both online and offline events and competitions, involving students from different faculties and academic years, and aims to develop an external network of relationships with other universities. In addition, the association also organizes training events for students interested in entering the world of E-sports."
+      "p1": "UniTn E-sports is a student sports association founded in 2022 with the aim of creating a community of students who can share their passion for competitive video games.<br>The association aims to create student teams that participate in national and international tournaments and competitions, representing the University of Trento in the field of E-sports.<br>UniTn E-sports organizes both online and offline events and competitions, involving students from different faculties and academic years, and aims to develop an external network of relationships with other universities. In addition, the association also organizes training events for students interested in entering the world of E-sports."
     },
     "record": {
       "main-title": "Record of events and competitions",
@@ -44,9 +44,13 @@
       },
       "synergie-rocket-league-cup": {
         "h3": "Synergie Rocket League Cup",
-        "date": "12/11/2025 - 22/11/2025 - 3/12/2025",
-        "participants": "To be defined",
-        "description": "Rocket League swiss tournament organized by Synergie and PG Esports, aimed for students aged 16 to 29. 4 qualification stages followed by a final stage with the best 8 teams."
+        "date": "12/11/2025<br>22/11/2025<br>3/12/2025",
+        "participants": "1° qualifier - 12 November 18:00: Gi. (lost in semifinals)<br>2° qualifier - 22 November 15:00: Gi. (lost in finals) and Nico (lost in semifinals)<br>3° qualifier - 26 November 18:00: not played<br>4° qualifier - 6 December 15:00: to be played",
+        "description": "Rocket League swiss tournament organized by Synergie and PG Esports, aimed for students aged 16 to 29. 4 qualification stages followed by a final stage with the best 8 teams.",
+        "label1": "Organizer:",
+        "text1": "PG Esports",
+        "label2": "Organizer:",
+        "text2": "Synergie Italy"
       }
     },
     "calendar": {
@@ -108,7 +112,7 @@
     },
     "presentation": {
       "h1": "Chi siamo",
-      "p1": "UniTn E-sports è un'associazione sportiva studentesca nata nel 2022 con l'intento di creare una comunità di studenti che possano condividere la loro passione per i videogiochi competitivi.\nL'associazione si pone l'obiettivo di creare dei team studenteschi che partecipino a tornei e competizioni nazionali e internazionali, per rappresentare l'Università di Trento nell'ambito degli E-sports.\nUniTn E-sports organizza eventi e competizioni sia online che offline, coinvolgendo studenti di diverse facoltà e anni accademici, e punta a sviluppare un network esterno di relazioni con le altre università. Inoltre, l'associazione organizza anche eventi di formazione per gli studenti interessati a entrare nel mondo degli E-sports."
+      "p1": "UniTn E-sports è un'associazione sportiva studentesca nata nel 2022 con l'intento di creare una comunità di studenti che possano condividere la loro passione per i videogiochi competitivi.<br>L'associazione si pone l'obiettivo di creare dei team studenteschi che partecipino a tornei e competizioni nazionali e internazionali, per rappresentare l'Università di Trento nell'ambito degli E-sports.<br>UniTn E-sports organizza eventi e competizioni sia online che offline, coinvolgendo studenti di diverse facoltà e anni accademici, e punta a sviluppare un network esterno di relazioni con le altre università. Inoltre, l'associazione organizza anche eventi di formazione per gli studenti interessati a entrare nel mondo degli E-sports."
     },
     "record": {
       "main-title": "Albo degli eventi e competizioni",
@@ -134,9 +138,13 @@
       },
       "synergie-rocket-league-cup": {
         "h3": "Synergie Rocket League Cup",
-        "date": "12/11/2025 - 22/11/2025 - 3/12/2025",
-        "participants": "Da definire",
-        "description": "Torneo svizzero di Rocket League organizzato da Synergie e PG Esports, rivolto a studenti dai 16 ai 29 anni. 4 fasi di qualificazione seguite da una fase finale con le migliori 8 squadre."
+        "date": "12/11/2025<br>22/11/2025<br>3/12/2025",
+        "participants": "1° qualifier - 12 novembre 18:00: Gi. (perso nelle semifinali)<br>2° qualifier - 22 novembre 15:00: Gi. (perso nelle finali) e Nico (perso nelle semifinali)<br>3° qualifier 26 - novembre 18:00: non giocato<br>4° qualifier - 6 dicembre 15:00: da giocare",
+        "description": "Torneo svizzero di Rocket League organizzato da Synergie e PG Esports, rivolto a studenti dai 16 ai 29 anni. 4 fasi di qualificazione seguite da una fase finale con le migliori 8 squadre.",
+        "label1": "Organizzatore:",
+        "text1": "PG Esports",
+        "label2": "Organizzatore:",
+        "text2": "Synergie Italia"
       }
     },
     "calendar": {

@@ -165,16 +165,31 @@ function setupEventModal(langRef) {
     // Date translation support
     const dateKey = card.getAttribute('data-date');
     let dateVal = getTranslation(langRef.current, dateKey) || dateKey || '';
-    // If the value is a date string, format it
-    if (/^\d{4}-\d{2}-\d{2}$/.test(dateVal)) {
-      const d = new Date(dateVal);
-      dateVal = d.toLocaleDateString(langRef.current, { year: 'numeric', month: 'long', day: 'numeric' });
-    }
-    modalEventDate.textContent = dateVal;
+    modalEventDate.innerHTML = dateVal;
 
     // Participants translation support
     const partKey = card.getAttribute('data-participants');
-    modalEventParticipants.textContent = getTranslation(langRef.current, partKey) || partKey || '';
+    modalEventParticipants.innerHTML = getTranslation(langRef.current, partKey) || partKey || '';
+
+    // Custom label 1
+    const customLabel1Key = card.getAttribute('data-custom-label1') || '';
+    const customText1Key = card.getAttribute('data-custom-text1') || '';
+    const customIcons1 = card.getAttribute('data-custom-icons1') || '';
+    const customLabel1 = getTranslation(langRef.current, customLabel1Key) || customLabel1Key;
+    const customText1 = getTranslation(langRef.current, customText1Key) || customText1Key;
+    qs('#modalCustomLabel1').innerHTML = customLabel1;
+    qs('#modalCustomText1').innerHTML = customText1;
+    qs('#modalCustomIcons1').innerHTML = customIcons1;
+
+    // Custom label 2
+    const customLabel2Key = card.getAttribute('data-custom-label2') || '';
+    const customText2Key = card.getAttribute('data-custom-text2') || '';
+    const customIcons2 = card.getAttribute('data-custom-icons2') || '';
+    const customLabel2 = getTranslation(langRef.current, customLabel2Key) || customLabel2Key;
+    const customText2 = getTranslation(langRef.current, customText2Key) || customText2Key;
+    qs('#modalCustomLabel2').innerHTML = customLabel2;
+    qs('#modalCustomText2').innerHTML = customText2;
+    qs('#modalCustomIcons2').innerHTML = customIcons2;
 
     updateModalLabels(langRef.current);
     eventModal.style.display = 'flex';
