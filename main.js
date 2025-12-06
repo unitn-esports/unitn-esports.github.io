@@ -134,14 +134,14 @@ function updateModalLabels(lang) {
   const modalEventDateLabel = qs('#modalEventDateLabel');
   const modalEventParticipantsLabel = qs('#modalEventParticipantsLabel');
   const modalEventDescriptionLabel = qs('#modalEventDescriptionLabel');
-  if (modalEventDateLabel) modalEventDateLabel.textContent = getTranslation(lang, 'modal.date');
-  if (modalEventParticipantsLabel) modalEventParticipantsLabel.textContent = getTranslation(lang, 'modal.participants');
-  if (modalEventDescriptionLabel) modalEventDescriptionLabel.textContent = getTranslation(lang, 'modal.description');
+  if (modalEventDateLabel) modalEventDateLabel.innerHTML = getTranslation(lang, 'modal.date');
+  if (modalEventParticipantsLabel) modalEventParticipantsLabel.innerHTML = getTranslation(lang, 'modal.participants');
+  if (modalEventDescriptionLabel) modalEventDescriptionLabel.innerHTML = getTranslation(lang, 'modal.description');
 }
 
 // --- Event Modal Logic ---
 function setupEventModal(langRef) {
-  const eventCards = qsa('.event-card');
+  const eventCards = qsa('.record-grid-cell');
   const eventModal = qs('#eventModal');
   const modalEventImg = qs('#modalEventImg');
   const modalEventTitle = qs('#modalEventTitle');
@@ -157,19 +157,26 @@ function setupEventModal(langRef) {
     modalEventImg.alt = getTranslation(langRef.current, titleKey) || titleKey || '';
     modalEventTitle.innerHTML = getTranslation(langRef.current, titleKey) || titleKey || '';
 
-    // Description translation support
+    // Description
     const descKey = card.getAttribute('data-description');
     const descVal = getTranslation(langRef.current, descKey) || descKey || '';
     modalEventDescription.innerHTML = descVal;
+    const descDetail = qs('#modalDetailDescription');
+    descDetail.style.display = descVal ? 'flex' : 'none';
 
-    // Date translation support
+    // Date
     const dateKey = card.getAttribute('data-date');
     let dateVal = getTranslation(langRef.current, dateKey) || dateKey || '';
     modalEventDate.innerHTML = dateVal;
+    const dateDetail = qs('#modalDetailDate');
+    dateDetail.style.display = dateVal ? 'flex' : 'none';
 
-    // Participants translation support
+    // Participants
     const partKey = card.getAttribute('data-participants');
-    modalEventParticipants.innerHTML = getTranslation(langRef.current, partKey) || partKey || '';
+    const partVal = getTranslation(langRef.current, partKey) || partKey || '';
+    modalEventParticipants.innerHTML = partVal;
+    const partDetail = qs('#modalDetailParticipants');
+    partDetail.style.display = partVal ? 'flex' : 'none';
 
     // Custom label 1
     const customLabel1Key = card.getAttribute('data-custom-label1') || '';
@@ -180,6 +187,9 @@ function setupEventModal(langRef) {
     qs('#modalCustomLabel1').innerHTML = customLabel1;
     qs('#modalCustomText1').innerHTML = customText1;
     qs('#modalCustomIcons1').innerHTML = customIcons1;
+    const custom1Detail = qs('#modalDetailCustom1');
+    // Show only if label, text, or icons are present
+    custom1Detail.style.display = (customLabel1 || customText1 || customIcons1) ? 'flex' : 'none';
 
     // Custom label 2
     const customLabel2Key = card.getAttribute('data-custom-label2') || '';
@@ -190,6 +200,8 @@ function setupEventModal(langRef) {
     qs('#modalCustomLabel2').innerHTML = customLabel2;
     qs('#modalCustomText2').innerHTML = customText2;
     qs('#modalCustomIcons2').innerHTML = customIcons2;
+    const custom2Detail = qs('#modalDetailCustom2');
+    custom2Detail.style.display = (customLabel2 || customText2 || customIcons2) ? 'flex' : 'none';
 
     updateModalLabels(langRef.current);
     eventModal.style.display = 'flex';
@@ -250,7 +262,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     localStorage.setItem(dysKey, enabled ? '1' : '0');
   }
   function updateDyslexicLabel(lang) {
-    if (dysLabel) dysLabel.textContent = getTranslation(lang, 'dyslexicFontLabel') || 'Dyslexic font';
+    if (dysLabel) dysLabel.innerHTML = getTranslation(lang, 'dyslexicFontLabel') || 'Dyslexic font';
   }
   if (dysSwitch) {
     dysSwitch.addEventListener('change', () => {

@@ -46,7 +46,7 @@
         "h3": "<a href=\"https://rocketleague.synergie-italia.it/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">Synergie Rocket League Boost Cup</a>",
         "date": "<a href=\"https://www.instagram.com/p/DRC9AChjbdx/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">12/11/2025</a><br><a href=\"https://www.instagram.com/p/DRe1V5HjYN8/?img_index=1\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">22/11/2025</a><br>03/12/2025<br>06/12/2025",
         "participants": "1° qualifier - 12 November 18:00: Gi. (lost in semifinals)<br>2° qualifier - 22 November 15:00: Gi. (lost in finals) and Nico (lost in semifinals)<br>3° qualifier - 26 November 18:00: not played<br>4° qualifier - 6 December 15:00: to be played",
-        "description": "Rocket League swiss tournament organized by Synergie and PG Esports, aimed for students aged 16 to 29. 4 qualification stages followed by a final stage with the best 8 teams.",
+        "description": "Rocket League swiss tournament organized by Synergie and PG Esports, aimed for students aged 16 to 29.<br>4 qualification stages followed by a final stage with the best 8 teams.",
         "label1": "Organizer:",
         "text1": "<a href=\"https://pge.gg/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">PG Esports</a>",
         "label2": "Organizer:",
@@ -84,8 +84,8 @@
     "footer": {
       "copy": "© 2025 UniTn E-sports — All rights reserved",
       "note": "Made with ❤️ by Pietro Marini",
-      "assetsNotice": "All assets used to describe or display events remain the property of their respective owners.<br>UniTn E-sports makes no claim of ownership over such materials.<br>Dyslexic font toggle uses <a href=\"https://opendyslexic.org/\" target=\"_blank\" rel=\"noopener noreferrer\">OpenDyslexic font</a> by Abbie Gonzalez, used under the SIL Open Font License.<br>Before adding images, all relevant owners are contacted to obtain permission for use.",
-      "permissionProof": "Proof of permissions are available <a href=\"https://docs.google.com/document/d/1XYgYzRvguzgS3483zZ9lNgWZayf2R9ExQ8pxLzdRecQ/edit?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Permission proof document\">here</a>."
+      "assetsNotice": "All assets used to describe or display events remain the property of their respective owners.<br>UniTn E-sports makes no claim of ownership over such materials.<br>Dyslexic font toggle uses <a href=\"https://opendyslexic.org/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color: var(--muted);\">OpenDyslexic font</a> by Abbie Gonzalez, used under the SIL Open Font License.<br>Before adding images, all relevant owners are contacted to obtain permission for use.",
+      "permissionProof": "Proof of permissions are available <a href=\"https://docs.google.com/document/d/1XYgYzRvguzgS3483zZ9lNgWZayf2R9ExQ8pxLzdRecQ/edit?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Permission proof document\" style=\"text-decoration:underline; color: var(--muted);\">here</a>."
      },
     "dyslexicFontLabel": "Dyslexic font",
      "modal": {
@@ -139,9 +139,9 @@
       },
       "synergie-rocket-league-cup": {
         "h3": "<a href=\"https://rocketleague.synergie-italia.it/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">Synergie Rocket League Boost Cup</a>",
-        "date": "<a href=\"https://www.instagram.com/p/DRC9AChjbdx/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">12/11/2025</a><br><a href=\"https://www.instagram.com/p/DRe1V5HjYN8/?img_index=1\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">22/11/2025</a><br>3/12/2025<br>06/12/2025",
+        "date": "<a href=\"https://www.instagram.com/p/DRC9AChjbdx/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">12/11/2025</a><br><a href=\"https://www.instagram.com/p/DRe1V5HjYN8/?img_index=1\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">22/11/2025</a><br>03/12/2025<br>06/12/2025",
         "participants": "1° qualifier - 12 novembre 18:00: Gi. (perso nelle semifinali)<br>2° qualifier - 22 novembre 15:00: Gi. (perso nelle finali) e Nico (perso nelle semifinali)<br>3° qualifier 26 - novembre 18:00: non giocato<br>4° qualifier - 6 dicembre 15:00: da giocare",
-        "description": "Torneo svizzero di Rocket League organizzato da Synergie e PG Esports, rivolto a studenti dai 16 ai 29 anni. 4 fasi di qualificazione seguite da una fase finale con le migliori 8 squadre.",
+        "description": "Torneo svizzero di Rocket League organizzato da Synergie e PG Esports, rivolto a studenti dai 16 ai 29 anni.<br>4 fasi di qualificazione seguite da una fase finale con le migliori 8 squadre.",
         "label1": "Organizzatore:",
         "text1": "<a href=\"https://pge.gg/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">PG Esports</a>",
         "label2": "Organizzatore:",
@@ -179,8 +179,8 @@
     "footer": {
       "copy": "© 2025 UniTn E-sports — Tutti i diritti riservati",
       "note": "Fatto con ❤️ da Pietro Marini",
-      "assetsNotice": "Tutti gli asset utilizzati per descrivere o mostrare eventi rimangono di proprietà dei rispettivi titolari.<br>UniTn E-sports non rivendica alcun diritto di proprietà su tali materiali.<br>Lo switch per il font per la dislessia utilizza il font <a href=\"https://opendyslexic.org/\" target=\"_blank\" rel=\"noopener noreferrer\">font OpenDyslexic</a> di Abbie Gonzalez, utilizzato sotto la SIL Open Font License.<br>Prima di aggiungere immagini, vengono contattati i relativi proprietari per ottenere il permesso d'uso.",
-      "permissionProof": "La prova dei permessi è disponibile <a href=\"https://docs.google.com/document/d/1XYgYzRvguzgS3483zZ9lNgWZayf2R9ExQ8pxLzdRecQ/edit?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Permission proof document\">qui</a>."
+      "assetsNotice": "Tutti gli asset utilizzati per descrivere o mostrare eventi rimangono di proprietà dei rispettivi titolari.<br>UniTn E-sports non rivendica alcun diritto di proprietà su tali materiali.<br>L' interruttore per il font per la dislessia utilizza il font <a href=\"https://opendyslexic.org/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color: var(--muted);\">OpenDyslexic</a> di Abbie Gonzalez, utilizzato sotto la SIL Open Font License.<br>Prima di aggiungere immagini, vengono contattati i relativi proprietari per ottenere il permesso d'uso.",
+      "permissionProof": "La prova dei permessi è disponibile <a href=\"https://docs.google.com/document/d/1XYgYzRvguzgS3483zZ9lNgWZayf2R9ExQ8pxLzdRecQ/edit?usp=sharing\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Permission proof document\" style=\"text-decoration:underline; color: var(--muted);\">qui</a>."
      },
      "dyslexicFontLabel": "Font per la dislessia",
      "modal": {
