@@ -227,6 +227,11 @@ function setupEventModal(langRef) {
     eventModal.addEventListener('click', (e) => {
       if (e.target === eventModal) hideEventModal();
     });
+    // Add close button logic
+    const closeBtn = document.getElementById('modalCloseBtn');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', hideEventModal);
+    }
   }
   document.addEventListener('keydown', (e) => {
     if (eventModal && eventModal.style.display === 'flex' && e.key === 'Escape') hideEventModal();

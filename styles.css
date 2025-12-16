@@ -1,3 +1,25 @@
+/* Modal close button wrapper */
+.modal-close-btn-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0 0.5rem 0;
+}
+
+/* Modal close button */
+.modal-close-btn {
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  color: #001;
+  border: none;
+  border-radius: 8px;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 0.7rem 2.2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(2,6,23,0.10);
+  transition: background 0.2s;
+}
 /* Modal details flexbox layout */
 .modal-details-flex {
   display: flex;
