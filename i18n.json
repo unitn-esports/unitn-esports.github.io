@@ -31,13 +31,13 @@
         "description": "In-house Yu-Gi-Oh! tournament held at the University of Trento, held on Dueling Book."
       },
       "gsport-league": {
-        "h3": "GSport League",
+        "h3": "<a href=\"https://e4sczech.cz/en/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">GSport League</a>",
         "date": "03/04/2023 – 05/05/2023",
         "participants": "To be defined",
         "description": "International university-level competition that merges esports and physical sport: teams compete in online gaming (Counter-Strike 2 and EA FC 24) alongside tracked physical activity."
       },
       "amazon-university-esports": {
-        "h3": "Amazon University E-sports",
+        "h3": "<a href=\"https://universityesports.net/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">Amazon University E-sports</a>",
         "date": "12/04/2023 – 25/05/2023",
         "participants": "To be defined",
         "description": "Various esports tournaments organized by Amazon University E-sports."
@@ -125,13 +125,13 @@
         "description": "Torneo interno di Yu-Gi-Oh! tenuto presso l'Università di Trento, giocato su Dueling Book."
       },
       "gsport-league": {
-        "h3": "GSport League",
+        "h3": "<a href=\"https://e4sczech.cz/en/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">GSport League</a>",
         "date": "03/04/2023 – 05/05/2023",
         "participants": "Da definire",
         "description": "Competizione universitaria internazionale che unisce esports e sport fisico: le squadre competono nei videogiochi online (Counter-Strike 2 e EA FC 24) insieme ad attività fisica tracciata."
       },
       "amazon-university-esports": {
-        "h3": "Amazon University E-sports",
+        "h3": "<a href=\"https://universityesports.net/\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"text-decoration:underline; color:inherit;\">Amazon University E-sports</a>",
         "date": "12/04/2023 – 25/05/2023",
         "participants": "Da definire",
         "description": "Vari tornei di esports organizzati da Amazon University E-sports."
